@@ -1,6 +1,7 @@
 # Credit-card-defaulters-prediction
 The credit card default dataset gives information about the payment records, demographic factors, and, bill statements of credit card clients in Taiwan from April 2005 to September 2005.
 
-The dataset aims to determine whether the customer will be a defaulter in the next month based on the various predictive analysis. 23 features related to a customer influence the decision of them making a payment in the next month. There are two classes in the target variable "default payment next month"; 1 denotes that the person will be in default the following month, and 0 denotes the opposite. 
 
-The ordinal measures that indicate the payment delay in months are displayed in the columns "PAY_0," "PAY_1," etcetera. “BILL_AMT” shows the bill statement of a particular month. The amount paid in a given month is displayed in the column "PAY_AMT". Similarly, Age, Marriage, and other nominal features have a major effect on the analysis.
+The analysis gives us a brief representation of whether a person is going to default in the next month. By defining various features such as f1-score, precision, and recall, we understand the functionality of the classification models.  We tried various techniques to solve the data imbalance issue by using Optuna and SMOTE, the method gave better results in some of the suitable classifiers. We learned the deformities in the data through examination of each and every feature and engineered a modified dataset to predict our target efficiently. We implemented the Z-score, Boxplots, and EllipticEnvelope method to detect and remove outliers. Also, PCA and LDA were tried to test if dimensionality reduction improves the robustness of the model. 
+
+
